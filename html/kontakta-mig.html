@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakta oss - Min Webbsajt</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a href="#" class="logo">Min Webbsajt</a>
+    <button class="menu-button" aria-label="Öppna meny">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Hem</a></li>
+      <li><a href="om-mig.html">Om mig</a></li>
+      <li><a href="teknik.html">Teknik</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="kontakta-mig.html">Kontakta mig</a></li>
+    </ul>
+    <!-- Sökbox -->
+    <div class="search-container">
+      <input type="text" id="searchBox" placeholder="Sök på sajten..." aria-label="Sök på sajten" />
+      <button type="button" id="searchButton" aria-label="Sök">🔍</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero1">
+    <h1>Kontakta oss</h1>
+    <p>Har du några frågor? Fyll gärna i formuläret nedan, eller använd någon av länkarna för att nå mig direkt.</p>
+
+    <article>
+      <h2>Telefonnummer</h2>
+      <p>Ring mig på: <a href="tel:+46123456789">+46 12 34 56 78 9</a></p>
+    </article>
+
+    <article>
+      <h2>E-postadress</h2>
+      <p>Skicka ett mejl till mig: <a href="mailto:info@exempel.se">info@exempel.se</a></p>
+    </article>
+
+    <article>
+      <h2>Kontakta mig via formuläret</h2>
+      <form action="#" method="post" class="contact-form">
+        <!-- Namn -->
+        <label for="namn">Namn:</label>
+        <input type="text" id="namn" name="namn" required><br><br>
+
+        <!-- E-post -->
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Telefonnummer -->
+        <label for="telefon">Telefonnummer:</label>
+        <input type="tel" id="telefon" name="telefon" required><br><br>
+
+        <!-- Kundtyp -->
+        <fieldset>
+          <legend>Kundtyp:</legend>
+          <input type="radio" id="blivande" name="kundtyp" value="Blivande kund" required>
+          <label for="blivande">Blivande kund</label><br>
+          <input type="radio" id="nuvarande" name="kundtyp" value="Nuvarande kund" required>
+          <label for="nuvarande">Nuvarande kund</label><br>
+        </fieldset>
+        <br>
+
+        <!-- Ämne -->
+        <label for="amne">Ämne:</label>
+        <input type="text" id="amne" name="amne" required><br><br>
+
+        <!-- Meddelande -->
+        <label for="meddelande">Meddelande:</label><br>
+<!--        <textarea id="meddelande" name="meddelande" rows="4" cols="50" required></textarea><br><br>-->
+        <textarea id="meddelande" name="meddelande" class="textarea" rows="4" cols="50" required></textarea><br><br>
+        <!-- Integritetspolicy -->
+        <label>
+          <input type="checkbox" name="integritet" required> Jag godkänner integritetspolicyn
+        </label><br><br>
+
+        <!-- Skicka-knapp -->
+        <button type="submit">Skicka</button>
+      </form>
+    </article>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Min Webbsajt. Alla rättigheter förbehålls.</p>
+</footer>
+<script src="../js/app.js"></script>
+</body>
+</html>
