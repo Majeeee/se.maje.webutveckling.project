@@ -93,7 +93,7 @@ body,html, h1, h2, p, ul, li {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-image: url('../img/background2.jpeg'); /* Ändra sökvägen till din bild */
+  background-image: url('background2.jpeg'); /* Ändra sökvägen till din bild */
   background-size: cover; /* Gör så att bilden täcker hela bakgrunden */
   background-position: center; /* Centrera bilden */
   background-attachment: fixed; /* Bilden stannar när sidan scrollas */
