@@ -240,6 +240,10 @@ main {
   max-width: 100%; /* Förhindrar att bilden blir för bred */
   height: auto; /* Behåller proportionerna */
 }
+.bild-sektion {
+  text-align: center; /* Centrerar text och inline-element som bilder */
+}
+
 
 /*.hero2 {
   display: flex;

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakta oss</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Add your site or application content here -->
+<header>
+  <nav class="navbar">
+    <a href="#" class="logo">Min Webbsajt</a>
+
+    <button class="menu-button">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Hem</a></li>
+      <li><a href="om-mig.html">Om mig</a></li>
+      <li><a href="teknik.html">Teknik</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="kontakt-mig.html">Kontakta mig</a></li>
+    </ul>
+
+    <!-- Sökbox -->
+    <div class="search-container">
+      <input type="text" id="searchBox" placeholder="Sök på sajten..." />
+      <button type="button" id="searchButton">🔍</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero1">
+  <section>
+    <h1>Kontakta oss</h1>
+    <p>Har du några frågor? Fyll gärna i formuläret nedan, eller använd någon av länkarna för att nå mig direkt.</p>
+  </section>
+
+  <section>
+    <h2>Telefonnummer</h2>
+    <p>Ring mig på: <a href="tel:+46123456789">+46 12 34 56 78 9</a></p>
+  </section>
+
+  <section>
+    <h2>E-postadress</h2>
+    <p>Skicka ett mejl till mig: <a href="mailto:info@exempel.se">info@exempel.se</a></p>
+  </section>
+
+
+    <h2>Kontakta mig via formuläret</h2>
+    <form action="#" method="post">
+      <label for="namn">Namn:</label>
+      <input type="text" id="namn" name="namn" required><br><br>
+
+      <label for="email">E-post:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="telefon">Telefonnummer:</label>
+      <input type="tel" id="telefon" name="telefon" required><br><br>
+
+      <!-- <label for="kundtyp">Typ av kund:</label><br> -->
+      <input type="radio" id="blivande" name="kundtyp" value="Blivande kund" required>
+      <label for="blivande">Blivande kund</label><br>
+      <input type="radio" id="nuvarande" name="kundtyp" value="Nuvarande kund" required>
+      <label for="nuvarande">Nuvarande kund</label><br><br>
+
+      <label for="amne">Ämne:</label>
+      <input type="text" id="amne" name="amne" required><br><br>
+
+      <label for="meddelande">Meddelande:</label><br>
+      <textarea id="meddelande" name="meddelande" rows="4" cols="50" required></textarea><br><br>
+
+      <label>
+        <input type="checkbox" name="integritet" required> Jag godkänner integritetspolicyn
+      </label><br><br>
+
+      <button type="submit">Skicka</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>© 2024 Min Applikation</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
