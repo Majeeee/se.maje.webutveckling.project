@@ -88,7 +88,6 @@ body,html, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100%;
 }
 
 body {
@@ -99,15 +98,8 @@ body {
   background-position: center; /* Centrera bilden */
   background-attachment: fixed; /* Bilden stannar när sidan scrollas */
   color: #333;
-  height: 100%;
-  margin: 0;
 }
-body > main {
-  min-height: calc(80vh - 60px); /* Justera beroende på footer-höjden */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+
 
 /* Header och navigering */
 header {
